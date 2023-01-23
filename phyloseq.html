@@ -425,8 +425,8 @@ physeq &lt;- qza_to_phyloseq(
 
 # Let&#39;s remove the control samples 
 physeq = subset_samples(physeq, type != &quot;0&quot;)
-physeq = subset_samples(physeq, donor.id != &quot;0&quot;)
-physeq = subset_samples(physeq, type != &quot;control&quot;)
+#physeq = subset_samples(physeq, donor.id != &quot;0&quot;)
+#physeq = subset_samples(physeq, type != &quot;control&quot;)
 #To relative 
 physeq &lt;- normalize(physeq, method = &quot;relative&quot;)</code></pre>
 <pre><code>## Normalization using relative method</code></pre>
