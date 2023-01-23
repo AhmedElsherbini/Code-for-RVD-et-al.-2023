@@ -1,4 +1,4 @@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #Author: Ahmed Elsherbini
 #last update: 20.12.2021
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -75,7 +75,7 @@ qiime taxa barplot \
   --o-visualization h_taxa-bar-plots.qzv
 
 ###############################################
-#lets do phylogentic trees######### 
+#let's do a phylogentic trees######### 
 
 qiime alignment mafft --i-sequences rep-seqs.qza --o-alignment aligned-rep-seqs.qza
 
@@ -114,11 +114,12 @@ qiime diversity alpha-rarefaction --i-table table.qza --m-metadata-file sample_m
 #############################################################
 
 qiime tools view alpha_rarefaction_curves.qzv
-#############let's calculate the alpha and beta diversity
+#############let's calculate the alpha and beta diversity#############
 
 qiime diversity core-metrics-phylogenetic --i-phylogeny rooted-tree.qza --i-table feature-table.qza --p-sampling-depth 800 --m-metadata-file new_sample_metadata.tsv --output-dir metrics
-
-#when we run after that for non-sorted sequences we will use 1100  as sequnce depth
+#PS1:In our work, we used the beta diversity from qiime2 instead of Phyloseq due to this issue, which we also witness
+#https://github.com/joey711/phyloseq/issues/956
+#PS2: When we run after that for non-sorted sequences we will use 1100  as sequnce depth
 ###########################
 #Thank you and see you soon
 
