@@ -431,7 +431,7 @@ physeq = subset_samples(physeq, type != &quot;control&quot;)
 physeq &lt;- normalize(physeq, method = &quot;relative&quot;)</code></pre>
 <pre><code>## Normalization using relative method</code></pre>
 <pre class="r"><code>#let&#39;s profile on the genus level our taxa
-#for easy coding, sometime I make than on variable 
+#for easy coding, sometimes I make than one variable for the same object 
 ps = physeq
 #Now, you have #Species #Genus
 ps.rel = transform_sample_counts(ps, function(x) x/sum(x)*100)
