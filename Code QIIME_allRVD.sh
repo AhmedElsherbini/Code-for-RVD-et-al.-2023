@@ -1,6 +1,5 @@
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #Author: Ahmed Elsherbini
-#last update: 20.12.2021
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ####################################
 conda activate qiime2-2021.11
@@ -24,8 +23,8 @@ qiime tools import \
 --output-path HOMD_tax.qza
 
 ###################################
-#extract read using the primers you can see them in the (Escapa et al., 2018)
-#https://pubmed.ncbi.nlm.nih.gov/30534599/
+#extract read using the primers you can see them in the (Escapa et al., 2020)
+#https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-020-00841-w
 
 qiime feature-classifier extract-reads \
 --i-sequences HOMD_data.qza \
@@ -108,7 +107,7 @@ qiime feature-table summarize \
 qiime tools view table.qzv
 ###############to choose the sampling depth#####!!!!!!!!!!!!!!!!!!!
 ####Typically you want to choose a value high enough that you capture the diversity present in samples with high counts, but low enough that you don’t get rid of a ton of your samples
-#############let's do alpha referaction plot to calculate the best depth ##takes time if you set wide range############
+#############let's do some alpha referaction plot to calculate the best depth ##takes time if you set wide range############
 
 qiime diversity alpha-rarefaction --i-table table.qza --m-metadata-file sample_metadata.tsv --o-visualization alpha_rarefaction_curves.qzv  --p-min-depth 10 --p-max-depth 20000
 #############################################################
