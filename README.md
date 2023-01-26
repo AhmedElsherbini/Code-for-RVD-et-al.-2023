@@ -14,7 +14,7 @@
 
 * The sequence of this work starts by going from FASTQC, MultiQC,the R script of DADA2_V1V3, The bash script of Qiime2 , The R script of phyloseq and finally the R script of IgA score
 
-**CST_picker is mentioned in the work, where to find it?**
+**CST_picker is mentioned in this work, where to find it?**
 
 * [here](https://github.com/AhmedElsherbini/CST_picker) 
 
