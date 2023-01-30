@@ -26,4 +26,4 @@ You are welcome, please open an issue (or mail me : drahmedsherbini@yahoo.com) t
 
 
 ## License
-If this work is useful for you , kindly of cite the aforementioned paper.
+If this work is useful for you, kindly of cite the aforementioned paper.
