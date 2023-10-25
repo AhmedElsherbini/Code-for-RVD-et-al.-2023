@@ -1,7 +1,7 @@
 
 ## Secretory IgA impacts the microbiota density in the human nose
 
-**This repo is for the publication of [here](https://pubmed.ncbi.nlm.nih.gov/37865781/)**
+**This repo is for the publication of [Rv.D et al., 2023](https://pubmed.ncbi.nlm.nih.gov/37865781/)**
 
 
 **Where to find the FASTQ sequences?**
